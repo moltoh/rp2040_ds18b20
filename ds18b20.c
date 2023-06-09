@@ -49,9 +49,9 @@ void _readBytes(PIO pio, uint sm, uint8_t bytes[], int len) {
  * @param sm State Machine interfacing with the DS18B20.
  * @param in_fahrenheit True if temperature should be 
  * converted to fahrenheit. Otherwise, it will be left
- * in Celcius.
- * @return uint8_t Temperature measured from the DS18B20
- * as an unsigned 8-bit integer.
+ * in Celsius.
+ * @return int8_t Temperature measured from the DS18B20
+ * as a signed 8-bit integer.
  */
 int8_t ds18b20_get_temperature(PIO pio, uint sm, bool in_fahrenheit) {
     printf("Getting temperature...\n");

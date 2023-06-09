@@ -1,5 +1,5 @@
 # DS18B20 Digital Temperature Sensor Driver for RP2040
-This driver allows the the RP2040 MCU to interface with the DS18B20 temperature sensor using the RP2040's PIO. Once the DS18B20 has been initialized, a temperature can be read in either degrees Celcius or Fahrenheit.
+This driver allows the the RP2040 MCU to interface with the DS18B20 temperature sensor using the RP2040's PIO. Once the DS18B20 has been initialized, a temperature can be read in either degrees Celsius or Fahrenheit.
 
 #
  Note that CRC is not implemented to verify integrity of data retrieved from the DS18B20. This driver also only works with one device connected to the 1-Wire bus.
@@ -28,7 +28,7 @@ Once the initialization is finished and you have a valid SM index, the temperatu
 ```
 int8_t t = ds18b20_get_temperature(pio0, sm, MEASURE_IN_FAHRENHEIT);
 ```
-where the temperature is returned as an 8-bit signed integer. ```sm``` is the index returned from ```ds18b20_init```. The third argument should be 1 if you want the temperature to be converted to Fahrenheit. If 0, it will be left in Celcius.
+where the temperature is returned as an 8-bit signed integer. ```sm``` is the index returned from ```ds18b20_init```. The third argument should be 1 if you want the temperature to be converted to Fahrenheit. If 0, it will be left in Celsius.
 
 # Credit
 This is heavily based on the text from:   

@@ -20,7 +20,7 @@ int main() {
         printf(
             "Temperature %d degrees %s\n", 
             t, 
-            MEASURE_IN_FAHRENHEIT ? "fahrenheit" : "celcius"
+            MEASURE_IN_FAHRENHEIT ? "fahrenheit" : "celsius"
         );
 
         sevenseg_show(t);
