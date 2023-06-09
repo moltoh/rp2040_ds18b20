@@ -28,7 +28,7 @@ Once the initialization is finished and you have a valid SM index, the temperatu
 ```
 int8_t t = ds18b20_get_temperature(pio0, sm, MEASURE_IN_FAHRENHEIT);
 ```
-where the temperature is returned as an 8-bit signed integer. ```sm``` is the index returned from ```ds18b20_init```. The third argument should be 1 if you want the temperature to be converted to Fahrenheit. If 0, it will be left in Celsius.
+where the temperature is returned as an 8-bit signed integer (Note that the code can be simply modified to return a precise floating point value for the temperature). ```sm``` is the index returned from ```ds18b20_init```. The third argument should be 1 if you want the temperature to be converted to Fahrenheit. If 0, it will be left in Celsius.
 
 # Credit
 This is heavily based on the text from:   
