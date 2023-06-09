@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "sevenseg.h": "c",
+        "ds18b20.h": "c"
+    },
+    "cmake.sourceDirectory": "/Users/michaelhogue/Developer/Embedded Projects/DS18B20/example"
+}
